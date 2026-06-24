@@ -116,6 +116,7 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
+  
 }
 export const viewport: Viewport = {
   colorScheme: 'dark',
@@ -133,6 +134,28 @@ export default function RootLayout({
       className={`dark ${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="font-sans antialiased bg-background text-foreground">
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: 'Neeraj Ram',
+      url: 'https://neerajram.in',
+      jobTitle: 'Product Manager',
+      description:
+        'EV Product Manager specializing in charging infrastructure, SaaS platforms, and 0→1 product development.',
+      address: {
+        '@type': 'Koramangala Sub Post Office,Bengaluru, Karnataka, India',
+        addressLocality: 'Bengaluru',
+        addressCountry: 'India',
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/neerajram17/',
+      ],
+    }),
+  }}
+/>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
