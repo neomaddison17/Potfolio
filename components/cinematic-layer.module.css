@@ -1,0 +1,16 @@
+.canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  /* Soft blur creates a dreamy, out-of-focus bokeh atmosphere. */
+  filter: blur(1.2px);
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+.canvas :global(canvas) {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
