@@ -146,7 +146,7 @@ export default function RootLayout({
       description:
         'EV Product Manager specializing in charging infrastructure, SaaS platforms, and 0→1 product development.',
       address: {
-        '@type': 'Koramangala Sub Post Office,Bengaluru, Karnataka, India',
+        '@type': 'PostalAddress',
         addressLocality: 'Bengaluru',
         addressCountry: 'India',
       },
