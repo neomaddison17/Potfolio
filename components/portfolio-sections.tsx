@@ -180,7 +180,7 @@ export function PortfolioSections() {
         <div className={styles.inner}>
           <p className={`${styles.eyebrow} ${styles.reveal}`}>Case Studies</p>
           <h2 className={`${styles.heading} ${styles.reveal}`}>
-            Selected projects with measurable outcomes.
+            Featured Product Case Studies.
           </h2>
 
           <div className={styles.workList}>
