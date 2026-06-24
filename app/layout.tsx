@@ -139,18 +139,19 @@ export default function RootLayout({
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       '@context': 'https://schema.org',
+
       '@type': 'Person',
-      name: 'Neeraj Ram',
-      url: 'https://neerajram.in',
-      jobTitle: 'Product Manager',
-      description:
+      'name': 'Neeraj Ram',
+      'url': 'https://neerajram.in',
+      'jobTitle': 'Product Manager',
+      'description':
         'EV Product Manager specializing in charging infrastructure, SaaS platforms, and 0→1 product development.',
-      address: {
+      'address': {
         '@type': 'PostalAddress',
-        addressLocality: 'Bengaluru',
-        addressCountry: 'India',
+        'addressLocality': 'Bengaluru',
+        'addressCountry': 'India',
       },
-      sameAs: [
+      'sameAs': [
         'https://www.linkedin.com/in/neerajram17/',
       ],
     }),
