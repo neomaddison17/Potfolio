@@ -237,6 +237,7 @@ export const portfolio = {
     { label: "Skills", href: "#skills" },
     { label: "Experience", href: "#experience" },
     { label: "Work", href: "#work" },
+    { label: "Case Studies", href: "#case-studies" },
     { label: "Services", href: "#services" },
     { label: "Contact", href: "#contact" },
   ],

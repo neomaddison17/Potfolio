@@ -172,20 +172,30 @@ export function PortfolioSections() {
             </div>
           </div>
 
-          <p className={styles.subLabel}>Selected Work</p>
+        </div>
+      </section>
+
+      {/* ===================== Case Studies ===================== */}
+      <section id="case-studies" className={`${styles.section} ${styles.sectionAlt}`}>
+        <div className={styles.inner}>
+          <p className={`${styles.eyebrow} ${styles.reveal}`}>Case Studies</p>
+          <h2 className={`${styles.heading} ${styles.reveal}`}>
+            Selected projects with measurable outcomes.
+          </h2>
+
           <div className={styles.workList}>
-            {projects.map((p) => (
-              <div key={p.name} className={`${styles.workRow} ${styles.reveal}`}>
+            {projects.map((project) => (
+              <div key={project.name} className={`${styles.workRow} ${styles.reveal}`}>
                 <span className={styles.workName}>
-                  {p.url ? (
-                    <a href={p.url} target="_blank" rel="noreferrer">
-                      {p.name}
+                  {project.url ? (
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      {project.name}
                     </a>
                   ) : (
-                    p.name
+                    project.name
                   )}
                 </span>
-                <span className={styles.workType}>{p.type}</span>
+                <span className={styles.workType}>{project.type}</span>
               </div>
             ))}
           </div>
