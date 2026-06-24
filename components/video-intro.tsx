@@ -182,8 +182,9 @@ export function VideoIntro() {
             </h1>
 
             <p ref={roleRef} className={styles.role}>
-              EV Product Manager | Built 0&rarr;1 Charging & SaaS Platforms |
-              Product Strategy, GTM & Platform Products | IoT & Connected Devices
+             Product Manager | Built EV Charging & Energy Platforms from 0→1
+<br/>
+Led the development of ENERGIC, an EV Charging Management Platform spanning facility owner, consumer, installer, and eMSP experiences.
             </p>
           </div>
 
